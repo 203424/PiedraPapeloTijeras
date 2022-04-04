@@ -5,6 +5,7 @@ from PIL import ImageTk, Image
 def show_frame(frame):
     frame.tkraise()
 
+
 window = Tk()
 rockImg = ImageTk.PhotoImage(Image.open(r'C:\Users\elvat\OneDrive\Documentos\Programación\Python\img\rock.png').resize((100,100)))
 paperImg = ImageTk.PhotoImage(Image.open(r'C:\Users\elvat\OneDrive\Documentos\Programación\Python\img\paper.png').resize((100,100)))
