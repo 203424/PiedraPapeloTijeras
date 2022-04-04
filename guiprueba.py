@@ -6,9 +6,9 @@ def show_frame(frame):
     frame.tkraise()
 
 window = Tk()
-rockImg = ImageTk.PhotoImage(Image.open(r'..\PiedraPapeloTijeras\img\rock.png').resize((100,100)))
-paperImg = ImageTk.PhotoImage(Image.open(r'..\PiedraPapeloTijeras\img\paper.png').resize((100,100)))
-scissorsImg = ImageTk.PhotoImage(Image.open(r'..\PiedraPapeloTijeras\img\scissors.png').resize((100,100)))
+rockImg = ImageTk.PhotoImage(Image.open(r'../PiedraPapeloTijeras/img/rock.png').resize((100,100)))
+paperImg = ImageTk.PhotoImage(Image.open(r'../PiedraPapeloTijeras/img/paper.png').resize((100,100)))
+scissorsImg = ImageTk.PhotoImage(Image.open(r'../PiedraPapeloTijeras/img/scissors.png').resize((100,100)))
 window.state('zoomed')
 window.title("Piedra, papel o tijeras en Python!")
 
