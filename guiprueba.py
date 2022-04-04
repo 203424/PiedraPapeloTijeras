@@ -1,15 +1,17 @@
 from random import choice
 from tkinter import *
 from PIL import ImageTk, Image
+import os
 
 def show_frame(frame):
     frame.tkraise()
 
+print(os.getcwd())
 
 window = Tk()
-rockImg = ImageTk.PhotoImage(Image.open(r'C:\Users\elvat\OneDrive\Documentos\Programación\Python\img\rock.png').resize((100,100)))
-paperImg = ImageTk.PhotoImage(Image.open(r'C:\Users\elvat\OneDrive\Documentos\Programación\Python\img\paper.png').resize((100,100)))
-scissorsImg = ImageTk.PhotoImage(Image.open(r'C:\Users\elvat\OneDrive\Documentos\Programación\Python\img\scissors.png').resize((100,100)))
+rockImg = ImageTk.PhotoImage(Image.open(r'.\Piedra papel o tijeras\img\rock.png').resize((100,100)))
+paperImg = ImageTk.PhotoImage(Image.open(r'.\Piedra papel o tijeras\img\paper.png').resize((100,100)))
+scissorsImg = ImageTk.PhotoImage(Image.open(r'.\Piedra papel o tijeras\img\scissors.png').resize((100,100)))
 window.state('zoomed')
 window.title("Piedra, papel o tijeras en Python!")
 
